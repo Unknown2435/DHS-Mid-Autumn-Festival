@@ -1,17 +1,25 @@
 
-{
-  "name": "myapp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0"
-  }
-}
+{ 
+2   "name": "DHS Mid Autumn", 
+3   "version": "1.0.0", 
+4   "description": "An app for DHS.", 
+5   "main": "server.js", 
+6   "scripts": { 
+7     "test": "echo \"Error: no test specified\" && exit 1", 
+8     "start": "node server.js", 
+9     "postinstall": "cd public && bower install" 
+10   }, 
+11   "author": "Shawen <shawenteo@gmail.com>", 
+12   "license": "ISC", 
+13   "dependencies": { 
+14     "bower": "^1.6.5", 
+15     "body-parser": "^1.15.2", 
+16     "express": "*", 
+17     "express-session": "^1.14.1", 
+18     "mongoose": "^4.6.0", 
+19     "passport": "^0.3.2", 
+20     "morgan": "^1.7.0", 
+21     "passport-google-oauth": "^1.0.0" 
+22   } 
+23 } 
+
