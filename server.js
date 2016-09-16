@@ -23,7 +23,7 @@ app.route("/jokes").get(function(req,res,next){
 });
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + 'index.html');
+    res.sendFile('index.html');
 });
 
 app.post('/upvote', function(req, res) {
