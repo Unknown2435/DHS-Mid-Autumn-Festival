@@ -22,6 +22,10 @@ app.route("/jokes").get(function(req,res,next){
 	res.send(jokes[randomJokeIndex]);
 });
 
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + 'index.html');
+});
+
 app.post('/upvote', function(req, res) {
     var jokeIndex = req.body.id;
     if (typeof jokes[jokeIndex].votes === 'undefined') {
